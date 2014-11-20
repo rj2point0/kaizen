@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Pizza chain</title>
+<link  rel="stylesheet" href="css/style.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.lightbox_me.js"></script>
+<script>
+$(document).ready(function(){
+$(".content").hide();
+$(".content_inner").hide();
+  $("#location").click(function(){
+  $(".messgae").hide();
+  $("#location").addClass("active");
+    $(".content").toggle();
+	});
+	 $("#choose").click(function(){
+    $(".content_inner").slideToggle();
+	
+  });
+  
+  $('.box').hide();       
+        $('#selectField,#selectField2,#selectField3').change(function () {		
+            $('.box').hide();			
+			$(this).next().find('#'+$(this).val()).show();           
+        }); 
+		
+		$('#onlineorder1,#onlineorder2,#onlineorder3').click(function(e) {
+    $('#sign_up').lightbox_me({
+        centered: true, 
+        onLoad: function() { 
+            $('#sign_up').find('input:first').focus()
+            }
+        });
+    e.preventDefault();
+}); 
+
+$("#closebtn").click(function(){
+ $('#sign_up').hide();
+});
+
+});
+</script>
+</head>
+
+<body>
+<div class="contentWrapper">
+<!--header start-->
+<div class="headersection">
+
+<div class="logo"><img src="imagess/russo-newyark.png" /></div>
+<div class="navsection">
+<ul>
+<li> Home</li><li> Menu</li>
+<li id="location" class="active"><a href="#">Locations</a></li>
+<li>Videos</li>
+<li>Contact</li>
+</ul>
+</div>
+</div>
+<!--header end-->
+
+<!--container start-->
+<div class="maincontainer">
+<div class="messgae">
+<h2>Welcome</h2>
+<h3>
+Quality, Great Tasting Greek Pizza In Waterbury<br />
+Are you looking for good times and great food? Find the hot, delicious and authentic Greek pizza you have been craving with Zachary’s Pizza House. Since 1950, we have been serving customers with smile-inducing pizzas and other foods. We are the original downtown pizza shop of Waterbury.
+</h3>
+</div>
+<div class="content">
+<div class="title" id="choose">Choose a location</div>
+
+<!--accordian strat-->
+<div class="content_inner" >
+<div class="AccordionContainer">
+        <div class="AccordionTitle"><div id="Accordion_1">New York</div></div>
+        <div id="Content1" class="AccordionContent">
+		<div class="subtitle">Specialty Pizzas</div>
+		<div class="btnwrapper"><input type="button" class="ordernow" id="onlineorder1" value="Order Now"></div>
+		<div id="speciality">
+		<select id="selectField">
+		<option value="Choose Pizzas">Choose Pizzas</option>
+		<option value="Cheese">Cheese Pizzas</option>
+		<option value="Veggie">Veggie Pizzas</option>
+		<option value="Meat">Meat Pizzas</option>
+		</select>
+		
+		<div>
+		<div id="Cheese" class="box">
+		<ul><li>Extra Cheese Pizzas</li>
+		
+		</ul>
+		</div>
+    <div id="Veggie" class="box"><ul>
+<li>Paneer	</li>
+<li>Mushroom	</li>
+
+	</ul></div>
+    <div id="Meat" class="box"><ul><li>
+	Barbeque Chicken</li>
+	<li>Chunky Chicken</li>
+	</ul></div>
+	
+    </div>
+
+		
+		
+		</div>
+		
+		
+		
+		</div>
+
+        <div class="AccordionTitle"><div id="Accordion_2" >Chicago</div></div>
+        <div id="Content2" class="AccordionContent">
+		<div class="subtitle">Specialty Pizzas</div>
+		<div class="btnwrapper"><input type="button" class="ordernow" id="onlineorder2" value="Order Now"></div>
+		<div id="speciality">
+		
+		<select id="selectField2">
+		<option value="Choose Pizzas">Choose Pizzas</option>
+		<option value="Cheese">Cheese Pizzas</option>
+		<option value="Veggie">Veggie Pizzas</option>
+		<option value="Meat">Meat Pizzas</option>
+		</select>
+		
+		<div>
+		<div id="Cheese" class="box">
+		<ul><li>Extra Cheese Pizzas</li>
+		
+		</ul>
+		</div>
+    <div id="Veggie" class="box"><ul><li>Mushrooms</li>
+	<li>Golden Corn</li>
+	
+	</ul></div>
+    <div id="Meat" class="box"><ul><li>Zesty Chickens</li>
+	<li>Chunky Chicken</li>
+		</ul></div>
+    </div>
+
+	
+		
+		</div>
+		</div>
+
+        <div  class="AccordionTitle"><div id="Accordion_3">San Francisco</div></div>
+        <div id="Content3" class="AccordionContent">
+		<div class="subtitle">Specialty Pizzas</div>
+		<div class="btnwrapper"><input type="button" class="ordernow" id="onlineorder3" value="Order Now"></div>
+		<div id="speciality">
+		<select id="selectField3">
+		<option value="Choose Pizzas">Choose Pizzas</option>
+		<option value="Cheese">Cheese Pizzas</option>
+		<option value="Veggie">Veggie Pizzas</option>
+		<option value="Meat">Meat Pizzas</option>
+		</select>
+		
+		<div>
+		<div id="Cheese" class="box">
+		<ul><li>Extra Cheese Pizzas</li>
+		
+		</ul>
+		</div>
+    <div id="Veggie" class="box"><ul><li>Mushrooms</li>
+	<li>Onions </li>
+	</ul></div>
+    <div id="Meat" class="box"><ul><li>Barbeque Chicken</li>
+	<li>Hot n Spicy Chicken</li>
+	
+	</ul></div>
+    
+</div>
+		
+		
+		</div>
+		</div>
+
+    </div>
+</div>
+<!--accordian end-->
+</div>
+</div>
+<!--container end-->
+
+<!--footer start-->
+<div class="footer">
+© 2014  Companyname. All rights reserved.
+</div>
+<!--footer end-->
+</div>
+<!--form start-->
+<div id="sign_up">
+<div class="close" id="closebtn">X</div>
+<form id="form1" name="form1" method="post" action="/cgi-bin/gform">
+  <div class="rowform">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" class="inputname">
+  </div>
+  <div class="rowform">
+    <label for="phone">Phone: </label>
+    <input type="text" name="phone" id="phone" class="inputname">
+  </div>
+  <div class="rowform">
+    <label for="address">Address:</label>
+    <textarea></textarea>
+  </div>
+  <div class="rowform"><label>Size:</label>
+  <div  class="colm1"> 
+    <input type="radio" name="Size" id="large" value="Large">Large
+    
+    <input type="radio" name="Size" id="medium" value="Medium">Medium
+    
+    <input type="radio" name="Size" id="small" value="Small">Small
+    
+  </div>
+  </div>
+   <div class="rowform"><label>Delivery:</label>
+ <div  class="colm1"> 
+    <input type="radio" name="Delivery" id="delivery" value="yes">yes
+    <input type="radio" name="Delivery" id="delivery2" value="no">No
+    
+	</div>
+  </div>
+  <div class="rowformbtn">
+  
+    <input type="submit" name="submit" id="submit" value="Submit" class="btn">
+    <input type="reset" name="Reset" id="button" value="Reset" class="btn">
+  </div>
+</form>
+</div>
+<!--form end-->
+<script src="js/accordian.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* CSS Document */
+
+html,body{
+  height: 100%; 
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  color: #333;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  background:url(../imagess/background.jpg);
+  background-attachment: fixed;
+}
+  
+a, img {
+  padding: 0;
+  margin: 0; 
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contentWrapper {
+	margin: 0 auto;
+	width: 1024px;
+}
+.headersection{
+	float:left;
+	width: 1024px;
+	height:auto;
+	color:#fff;
+}
+.headersection .logo{
+	float:left;
+	width:20%;
+}
+.headersection .logo img{
+	width:78%;
+}
+.headersection .navsection{
+	float:left;
+	width:80%;
+	margin-top:12px;
+}
+.headersection .navsection ul{
+	margin:0;
+	padding:0;
+	float:right;
+}
+.headersection .navsection li{
+	margin:10px;
+	float:left;
+	list-style:none;
+	color:#fff;
+	padding: 10px 20px;
+	cursor:pointer;
+}
+.headersection .navsection li:last-child{
+	margin-right:0px;
+	padding-right:0px;
+}
+.headersection .navsection li:hover{
+	background:#f0c802;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.headersection .navsection li.active{
+	background:#f0c802;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow:0 1px 10px #9d9d9d;
+}
+.headersection .navsection li a{
+	color:#fff;
+	text-decoration:none;
+}
+.maincontainer{
+	float:left;
+	background:url(../imagess/home-banner-2.jpg) no-repeat;
+	height:431px;
+	width:100%;
+	margin-top:30px;
+}
+.maincontainer .messgae{
+	padding:60px;
+	width:60%;
+	color:#fff;
+}
+.maincontainer h3{
+	color:#fff;
+	font-style:italic;
+}
+.maincontainer h1{
+	color:#fff;
+}
+.maincontainer .content{
+	padding:12px;
+	color:#fff;
+	height:100%;
+	float:left;
+	width:99%;
+}
+.title{
+	background:#f0c802;
+	padding:12px;
+	width:19%;
+	padding:12px;
+	float:left;
+	font-weight:bold;
+	font-size:16px;
+	text-transform:uppercase;
+	color:#000;
+	-webkit-border-radius: 2px;
+	-moz-border-radius:2px;
+	border-radius: 2px;
+}
+.content_inner{
+	float:left;
+	height:auto;
+	width:auto;
+	width:98%;
+}
+
+.footer {
+    background-color:#444;
+    color: #fff;
+    float: left;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 1024px;
+}
+.AccordionContent
+{
+ 
+   	float:left;
+    width:100%;
+	height:auto;
+
+}
+.AccordionContainer
+{
+
+    margin-top: 20px;
+   	float:left;
+    width:100%;
+	height:auto;
+
+}
+.AccordionTitle{
+	clear:both;
+	cursor: pointer;
+	font-family: Arial;
+	font-size:17px;
+	text-align: left;
+	vertical-align: middle;
+	line-height:43px;
+	padding-left:20px;
+	width:235px;
+	}
+	
+.AccordionTitle:hover{
+	background-color:#565555;
+}
+.AccordionContent{
+	height:auto;
+	overflow:hidden;
+	display:none;
+	background:url(../imagess/background1.png) repeat;
+	padding:4px;
+}
+#speciality {
+	clear:both;
+	float:left;
+    font-style: italic;
+    line-height: 30px;
+    padding: 16px;
+}
+.subtitle{
+	background:#242424;
+	width:200px;
+	font-style:normal;
+	padding:10px;
+	float:left;
+}
+#speciality select{
+	width:180px;
+	padding:7px;
+}
+.subitemwrapper> .subitem_Cheese,.subitem_Veggie,.subitem_Meat{
+display:none;
+}
+
+.box{
+	 display:block;
+	 padding: 15px;
+	 width: auto;
+	 height: 100px;
+	 margin: 10px;
+    }
+    
+#selectField{
+     width: 200px;
+    }
+.btnwrapper {
+    float: right;
+    margin: 9px;
+}
+.ordernow {
+    background-color:#f0c802;
+    height: 31px;
+    width: 93px;
+	border:none;
+}
+
+#sign_up {
+    background: none repeat scroll 0 0 #eef2f7;
+    border: 1px solid #536376;
+    display: none;
+    padding: 14px 22px;
+    position: relative;
+    width: 400px;
+}
+.rowform{
+	float:left;
+	margin-bottom:20px;
+	width:100%;
+	}
+#form1 label {
+    float: left;
+    width: 100px;
+}
+#form1 .inputname {
+    float: left;
+    width: 200px;
+}
+#form1 textarea {
+    float: left;
+    width: 200px;
+}
+.colm1{
+	float:left;
+}
+.rowformbtn{
+	float:left;
+	margin-bottom:20px;
+	margin-left:100px;
+}
+.btn{
+	background:#b5121b;
+	border:none;
+	color:#fff;
+	padding:5px;
+	margin-right:7px;
+
+}
+.close{
+float:right;
+color:#000;
+font-size:20px;
+
+}
+
+
